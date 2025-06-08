@@ -29,15 +29,18 @@ body {
 /* globals.css */
 /* globals.css */
 /* globals.css */
-.cursor {
+.neon-cursor {
   width: 20px;
   height: 20px;
   background-color: #39ff14;
   border-radius: 50%;
   position: fixed;
+  pointer-events: none;
   z-index: 9999;
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
 }
+
 
 
 body {

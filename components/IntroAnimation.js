@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-// import { text } from "express";
+import Image from "next/image";
 
 export default function IntroAnimation({ onComplete }) {
   const containerRef = useRef();
@@ -43,13 +43,6 @@ export default function IntroAnimation({ onComplete }) {
         delay: 0.5,
         onComplete: onComplete,
       })
-    // .to(textRef.current, {
-    //   opacity: 1,
-    //   y: -20,
-    //   duration: 1,
-    //   ease: "power2.out",
-    // }, 0.8)
-    
 
   }, [onComplete]);
 
@@ -74,7 +67,8 @@ export default function IntroAnimation({ onComplete }) {
         ref={logoRef}
         className="absolute top-1/2 left-1/2 text-white text-6xl font-bold transform -translate-x-1/2 -translate-y-1/2 z-20"
       >
-        <img src="logo.png" alt="image" />
+        <Image src="/logo.png" alt="image" priority={1} width={400} height={400} />
+
       </div>
       <div
   ref={textRef}
