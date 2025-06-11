@@ -47,7 +47,7 @@ export default function HomePage({ done }) {
         muted
         loop
       />
-        <div ref={navbarRef} className="absolute top-0 left-0 w-full z-20">
+      <div ref={navbarRef} className="absolute top-0 left-0 w-full z-20">
         <Navbar />
       </div>
       {/* Animated NEURID Text */}

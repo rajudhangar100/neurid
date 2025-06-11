@@ -22,11 +22,14 @@ export default function Navbar() {
         <div onClick={()=>{router.push("/home")}}   className="hover:text-white hover:underline cursor-pointer transition duration-200">
           Home
         </div>
-        <div onClick={()=>{router.push("/dashboard")}} className="hover:text-white hover:underline cursor-pointer transition duration-200">
+        <div onClick={()=>{router.push("/visualization")}} className="hover:text-white hover:underline cursor-pointer transition duration-200">
+          Visualization
+        </div>
+        <div  onClick={()=>{router.push("/dashboard")}} className="hover:text-white hover:underline cursor-pointer transition duration-200">
           Dashboard
         </div>
-        <div  onClick={()=>{router.push("/contact")}} className="hover:text-white hover:underline cursor-pointer transition duration-200">
-          Contact Us
+        <div  onClick={()=>{router.push("/location")}} className="hover:text-white hover:underline cursor-pointer transition duration-200">
+          Location 
         </div>
       </div>
     </nav>
